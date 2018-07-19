@@ -6,7 +6,7 @@ class SirioajaSpider(scrapy.Spider):
     name = "books"
     allowed_domains = ["sirioaja.it"]
     start_urls = [
-        'https://sirioaja.it/scuola-per-estetista-contatti/,
+        'https://sirioaja.it/scuola-per-estetista-contatti/',
     ]
 
     def parse(self, response):
