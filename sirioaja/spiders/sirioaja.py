@@ -10,4 +10,4 @@ class SirioajaSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
-        yield{'title' : resonse.css('title::text').extract()}
+        yield{'title' : response.css('title::text').extract_first()}
