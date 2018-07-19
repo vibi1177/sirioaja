@@ -12,11 +12,11 @@ class SirioajaSpider(scrapy.Spider):
     def parse(self, response):
         yield
         {
-            'title' : response.css('title::text').extract_first()
+            'title' : response.css('title::text').extract_first(),
             'name'  : response.xpath(
                 '//div[@class="textwidget"]/h3/text()'
-            ).extract_first();
+            ).extract_first(),
             'address'  : response.xpath(
                 '//div[@class="textwidget"]/text()'
-            ).extract_first();
+            ).extract_first()
         }
