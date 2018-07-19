@@ -17,6 +17,6 @@ class SirioajaSpider(scrapy.Spider):
             '//div[@class="textwidget"]/h3/text()'
         ).extract_first()
         item['address'] =  response.xpath(
-            '//div[@class="textwidget"]/text()'
+            '//div[@id="text-3"]/div[@class="textwidget"]/text()'
         ).extract_first()
         yield item
