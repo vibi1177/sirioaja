@@ -3,7 +3,7 @@ import scrapy
 
 
 class SirioajaSpider(scrapy.Spider):
-    name = "books"
+    name = "sirioaja"
     allowed_domains = ["sirioaja.it"]
     start_urls = [
         'https://sirioaja.it/scuola-per-estetista-contatti/',
