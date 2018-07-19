@@ -20,6 +20,6 @@ class SirioajaSpider(scrapy.Spider):
             '//div[@id="text-3"]/div[@class="textwidget"]/text()'
         ).extract_first()
         item['info'] = response.xpath(
-            '//div[@id="text-4"]/div[@class="textwidget"]/text()'
+            '//div[@id="text-4"]/div[@class="textwidget"]/p/text()'
         ).extract_first()
         yield item
